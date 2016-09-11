@@ -1,0 +1,40 @@
+USAGE: lamia <command> [options]
+
+GLOBAL OPTIONS:
+
+  --config-file, -c (default: "lamia.json")
+
+  --environment, -e (default: "default")
+
+  --help, -h
+
+COMMANDS:
+
+  serve, s: Start server in your local machine
+
+    --port `PORT`, -p `PORT` (default: 8008)
+
+    --timeout `TIME`, -t `TIME` (default: "3s")
+
+  deploy, d: Deploy to AWS
+
+    --dry-run, -d
+
+    --on-no-api-found `create|update|error`, --on-no-af `create|update|error` (default: "create")
+
+      create - creates new one
+      error  - throws error
+
+    --on-single-api-found `create|update|error`, --on-1-af `create|update|error` (default: "update")
+
+      create - creates new one
+      update - updates the api
+      error  - throws error
+
+    --on-multiple-apis-found `create|update|prompt|error`, --on-m-af `create|update|prompt|error` (default: "update")
+
+      create - creates new one
+      update - updates the api that was updated recently
+      prompt - shows prompt for selecting the api
+      error  - throws error
+

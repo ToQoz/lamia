@@ -1,0 +1,48 @@
+{
+  "name": "lamia",
+  "version": "0.0.1",
+  "description": "WAF for api gateway + lambda",
+  "main": "index.js",
+  "dependencies": {
+    "api-gateway-localdev": "^1.1.0",
+    "api-gateway-put-method": "^1.1.0",
+    "api-gateway-put-method-response": "^1.0.0",
+    "api-gateway-put-resource": "^1.0.0",
+    "aws-sdk": "^2.2.33",
+    "bluebird": "^3.1.1",
+    "brfs": "^1.4.2",
+    "browserify": "^13.0.0",
+    "deep-equal": "^1.0.1",
+    "dependency-list": "^0.2.2",
+    "fs-extra": "^0.26.5",
+    "glob": "^6.0.4",
+    "jsonnet": "^0.5.0-beta",
+    "lambda-put-alias": "^1.0.0",
+    "lambda-put-permission": "0.0.1",
+    "merge-stream": "^1.0.0",
+    "minimist": "^1.2.0",
+    "object-values": "^1.0.0",
+    "prompt": "^1.0.0",
+    "sprintf-js": "^1.0.3",
+    "strftime": "^0.9.2",
+    "yazl": "^2.3.0",
+    "brfs": "^1.4.3",
+    "browserify": "^13.0.0",
+    "express": "^4.13.3",
+    "glob": "^6.0.1",
+    "gulp": "^3.9.0",
+    "lambda-put-function": "^1.1.1",
+    "read-any-one-file": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "connect-timeout": "^1.7.0"
+  },
+  "devDependencies": {
+    "tap": "^5.1.1",
+    "tape": "^4.4.0"
+  },
+  "scripts": {
+    "test": "tapf ./test/*.sh"
+  },
+  "bin": "bin/cmd.js",
+  "author": "Takatoshi Matsumoto"
+}
