@@ -17,31 +17,32 @@ lamia.jsonnet
       "stage": "dev"
     }
   },
-  "enqueue": {
-    "endpoints": [
-      {
-        "httpMethod": "POST",
-        "path": "/queues",
-        "requestTemplates": {},
-        "responses": {
-          "200": {}
+  "functions": {
+    "enqueue": {
+      "endpoints": [
+        {
+          "httpMethod": "POST",
+          "path": "/queues",
+          "requestTemplates": {},
+          "responses": {
+            "200": {}
+          }
         }
-      }
-    ]
-  },
-  "dequeue": {
-    "events": [
-      {
-        "name": "polling-1",
-        "type": "schedule",
-        "config": {
-          "schedule": "cron(*/10 * * * ? *)",
-          "state": "ENABLED",
+      ]
+    },
+    "dequeue": {
+      "events": [
+        {
+          "name": "polling-1",
+          "type": "schedule",
+          "config": {
+            "schedule": "cron(*/10 * * * ? *)",
+            "state": "ENABLED",
+          }
         }
-      }
-    ]
+      ]
+    }
   }
-
 }
 ```
 
