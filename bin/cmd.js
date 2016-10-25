@@ -60,7 +60,7 @@ lamia.createApp(opts, function(err, app) {
       break;
     case "deploy":
     case "d":
-      otps = {
+      opts = {
         dryRun: argv['dry-run'],
       };
       lamia.deploy(app, opts, function(err) {
